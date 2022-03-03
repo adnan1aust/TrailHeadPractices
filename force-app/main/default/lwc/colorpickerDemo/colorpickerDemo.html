@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-horizontal_x-small">
+            <lightning-input type="color" label="Color" value="#931D1D" onchange={handleChange}>
+            </lightning-input>
+            <h3>Selected color = {color}</h3>
+            <div class='image-container'>
+                <img src={bombImage} class='single-image'>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,6 @@
+.single-image{
+    height: 128px;
+    width: 128px;
+    /*filter: invert(41%) sepia(91%) saturate(2425%) hue-rotate(166deg) brightness(101%) contrast(101%);*/
+    filter: var(--filterval);
+}
