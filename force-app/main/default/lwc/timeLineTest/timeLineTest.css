@@ -1,0 +1,21 @@
+.single-image{
+    height: 32px;
+    width: 32px;
+    filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(82deg) brightness(112%) contrast(101%);
+}
+
+.vertical-line1:before {
+    background: red;
+}
+
+.icon-background1 {
+    background-color: red;
+}
+
+.vertical-line2:before {
+    background: green;
+}
+
+.icon-background2 {
+    background-color: green;
+}

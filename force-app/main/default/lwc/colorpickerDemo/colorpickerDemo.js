@@ -1,10 +1,12 @@
 import { LightningElement, track } from 'lwc';
 import BOMB_IMAGE from '@salesforce/resourceUrl/bomb'
 import { convertHextoFilter } from 'c/common';
+import STAGE_ONE_LABEL from '@salesforce/label/c.CT_LABEL_001';
 
 export default class ColorPickerDemo extends LightningElement {
     bombImage = BOMB_IMAGE;
     color;
+    staticStageOne = STAGE_ONE_LABEL;
     css = 'invert(18%) sepia(54%) saturate(3470%) hue-rotate(343deg) brightness(81%) contrast(94%)';
     handleChange(event) {
         try {
