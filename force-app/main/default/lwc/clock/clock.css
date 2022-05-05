@@ -1,0 +1,16 @@
+.clock-container{
+    padding:10px
+}
+
+.pie {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #E5E5E5;
+    background-image: var(--colorgradiant);
+}
+
+:host {
+    --sds-c-card-color-border: white;
+    --sds-c-card-shadow: none !important;
+}

@@ -1,0 +1,41 @@
+.container{
+    width: 400px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 0.25rem;
+    padding: 25px;
+}
+
+hr{
+    color: 2px solid #e5e5e5;
+    margin: 0 !important;
+}
+
+hr.active{
+    margin: 0 !important;
+    width: 17%;
+    height: 3px;
+    background: #2376cc;
+    border-radius: 3px;
+    margin-left: -2px !important;
+}
+
+.body{
+    margin-top: 10px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 330px;
+}
+
+.text-bold{
+    font-weight: 600;
+}
+
+.p{
+    font-size: 14px;
+}

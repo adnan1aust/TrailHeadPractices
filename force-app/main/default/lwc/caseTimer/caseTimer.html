@@ -1,0 +1,35 @@
+<template>
+
+    <div class="container">
+        <div class="header">
+            <div class="text-bold slds-text-heading_medium">Clock</div>
+        </div>
+        <hr class="active">
+        <hr>
+        <div class="body">
+            <div class="top">
+               <c-case-timer-top created-date-child={createdDate}></c-case-timer-top>
+            </div>
+            <div class="middle">
+                <div class="middle-clock">
+                  <c-clock css={color}></c-clock>
+                </div>
+                <div class="middle-timer">
+                    <c-time-spend></c-time-spend>
+                </div>
+                <div class="middle-button">
+                    <template if:true={clearClockButtonVisible}>
+                        <lightning-button label="Clear Clock" onclick={clearClock} class="slds-m-left_x-small"></lightning-button>
+                       
+                    </template>
+                    <template if:true={setClockButtonVisible}>
+                        <lightning-button label="Set Clock" onclick={setClock} class="slds-m-left_x-small"></lightning-button>
+                    </template>
+                </div>
+            </div>
+            <div class="bottom">
+              <c-case-stage-timeline></c-case-stage-timeline>
+            </div>
+        </div>
+    </div>
+  </template>

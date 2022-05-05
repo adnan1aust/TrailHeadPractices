@@ -1,0 +1,92 @@
+<template>
+    <ul class="slds-timeline">
+        <li>
+            <div class="slds-timeline__item_expandable slds-is-open vertical-lineOne"> <!--here goes timeline vertical line css color-->
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <button class="slds-button slds-button_icon" title="Toggle details for Review proposals for EBC deck with larger team and have marketing review this" aria-controls="task-item-expanded-73" aria-expanded="true">
+                        <svg class="slds-button__icon slds-timeline__details-action-icon" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                        </svg>
+                        </button>
+                        <div class="slds-icon_container  slds-timeline__icon slds-icon-standard-task icon-backgroundOne" title="task"> <!--here goes icon background color css-->
+                            <img src={arrowIcon} class='single-image'>
+                        </div>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                            <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                <span>Stage 1</span>
+                                <span class="slds-badge slds-theme_error">Badge Label</span>
+                            </div>
+                            <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                <div>
+                                    <lightning-button-icon icon-name={iconNameOne}  size="small"
+                                    alternative-text="View More" class="" onclick={toggleVisibility} name="iconOne"></lightning-button-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-id='articleOne'>
+                            <article class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium" id="task-item-expanded-73" aria-hidden="false">
+                                <ul class="slds-list_horizontal slds-wrap">
+                                    <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                                        Text 1
+                                    </li>
+                                    <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                                        Text 2
+                                    </li>
+                                    <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                                        Text 3
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="slds-timeline__item_expandable slds-is-open vertical-lineTwo"> <!--here goes timeline vertical line css color-->
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <button class="slds-button slds-button_icon" title="Toggle details for Review proposals for EBC deck with larger team and have marketing review this" aria-controls="task-item-expanded-73" aria-expanded="true">
+                        <svg class="slds-button__icon slds-timeline__details-action-icon" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                        </svg>
+                        </button>
+                        <div class="slds-icon_container  slds-timeline__icon slds-icon-standard-task icon-backgroundTwo" title="task"> <!--here goes icon background color css-->
+                            <img src={arrowIcon} class='single-image'>
+                        </div>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                            <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                <span>Stage 2</span>
+                                <span class="slds-badge slds-theme_warning">Badge Label</span>
+                            </div>
+                            <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                <lightning-button-icon icon-name={iconNameTwo}  size="small"
+                                alternative-text="View More" class="" onclick={toggleVisibility} name="iconTwo"></lightning-button-icon>
+                            </div>
+                        </div>
+                        <div data-id='articleTwo'>
+                            <article class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"  aria-hidden="false">
+                                <ul class="slds-list_horizontal slds-wrap">
+                                    <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                                        Text 1
+                                    </li>
+                                    <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                                        Text 2
+                                    </li>
+                                    <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                                        Text 3
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</template>

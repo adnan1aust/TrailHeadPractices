@@ -1,0 +1,53 @@
+<template>
+    <template if:true={showModal}>
+        <section aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container ">
+                <header class="slds-modal__header">
+                    <h1 class="slds-text-heading_small">{chooseIconLabel}</h1>
+                    <lightning-icon class="slds-modal__close" icon-name="utility:close" size="small" onclick={closeModal}></lightning-icon>
+                </header>
+                <div class="slds-modal__content">
+                    <div class="slds-p-around_small">
+                    </div>
+                    <div class="icons__Container">
+                        <div class="slds-grid slds-wrap">
+                            <template for:each={menuItems} for:item="icon">
+                                <template if:true={icon.isActivated}>
+                                    <div class="slds-col slds-size_1-of-4 selected" key={icon.id} data-id='image'>
+                                        <lightning-card class="icon__Card" key={icon.id}>
+                                            <div class={icon__Border}>
+                                                <div class="iconClass" onclick={iconSelectedFromModal}>
+                                                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" width="50" height="50">;
+                                                        <use xlink:href={icon.iconName}></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </lightning-card>
+                                    </div>
+                                </template>
+                                <template if:false={icon.isActivated}>
+                                    <div class="slds-col slds-size_1-of-4" key={icon.id} data-id='image'>
+                                        <lightning-card class="icon__Card" key={icon.id}>
+                                            <div class={icon__Border}>
+                                                <div class="iconClass" onclick={iconSelectedFromModal}>
+                                                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" width="50" height="50">;
+                                                        <use xlink:href={icon.iconName}></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </lightning-card>
+                                    </div>
+                                </template>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button variant="neutral" label={cancelLabel} onclick={closeModal} class="slds-p-around_x-small"></lightning-button>
+                    <lightning-button variant="brand" label={selectLabel} onclick={selectIcon} class="slds-p-around_x-small"></lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>
